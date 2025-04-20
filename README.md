@@ -1,4 +1,3 @@
-```markdown
 # Bi‑LSTM Sentiment Analysis
 
 A TensorFlow/Keras implementation of a multi‑class sentiment analysis model using a bidirectional LSTM on the [“multiclass-sentiment-analysis-dataset”](https://huggingface.co/datasets/Sp1786/multiclass-sentiment-analysis-dataset) from Hugging Face.
@@ -19,8 +18,7 @@ A TensorFlow/Keras implementation of a multi‑class sentiment analysis model us
 Install the dependencies:
 
 ```bash
-pip install tensorflow numpy pandas matplotlib \
-            huggingface_hub fsspec s3fs
+pip install tensorflow numpy pandas matplotlib huggingface_hub fsspec s3fs
 ```
 
 ---
@@ -29,12 +27,12 @@ pip install tensorflow numpy pandas matplotlib \
 
 ```
 .
-├── notebook.ipynb         # Jupyter notebook with all steps
+├── main.ipynb                      # Jupyter notebook with all steps
 ├── sentiment_bilstm_savedmodel/
-│   └── …                  # SavedModel directory
+│   └── …                           # SavedModel directory
 ├── sentiment_bilstm_best.h5
 ├── tokenizer.json
-└── README.md              # This file
+└── README.md                       # This file
 ```
 
 ---
@@ -44,7 +42,7 @@ pip install tensorflow numpy pandas matplotlib \
 1. **Clone the repo**  
    ```bash
    git clone https://github.com/tomal66/hf-sentiment-analysis
-   cd sentiment-bilstm
+   cd hf-sentiment-analysis
    ```
 
 2. **Install dependencies**  
@@ -54,7 +52,7 @@ pip install tensorflow numpy pandas matplotlib \
 
 3. **Run the notebook**  
    ```bash
-   jupyter notebook notebook.ipynb
+   jupyter notebook main.ipynb
    ```
 
 ---
@@ -166,7 +164,7 @@ Adjust `DATASET_ROOT` to point to a local path or other dataset if needed.
 
 ## 📈 Results
 
-After 10 epochs, you should see validation accuracy around **X%**. Tune hyperparameters (dropout, learning rate, L2) for improved performance.
+After 10 epochs, you should see validation accuracy around **65%**. Tune hyperparameters (dropout, learning rate, L2) for improved performance.
 
 ---
 
@@ -189,6 +187,5 @@ MIT License. Feel free to adapt and redistribute.
 
 If you use this code in your research, please cite:
 
-> Your Name, “Bi‑LSTM Multi‑Class Sentiment Analysis”, GitHub repository, 2025.  
+> Tasnimul Hossain, “Bi‑LSTM Multi‑Class Sentiment Analysis”, GitHub repository, 2025.  
 > https://github.com/tomal66/hf-sentiment-analysis
-```
